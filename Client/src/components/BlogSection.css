@@ -1,0 +1,81 @@
+.image{
+    mix-blend-mode: darken;
+}
+
+.cards-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20vmax,1fr));
+    grid-template-rows: auto;
+    gap: 70px 40px;
+    transition: transform 0.5s;
+    padding: 20px;
+    height: auto;  
+    padding-bottom: 50px;
+}
+
+.blog-heading-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.blog-heading {
+    font-weight: bolder;
+    font-family: 'Nunito Sans', sans-serif;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 2.8rem;
+}
+
+.horizontal-line {
+    width: 6px;
+    height: 28px;
+    background-color: var(--apple-blossom);
+    border-radius: 25%;
+}
+
+.cards {
+    border-radius: 32px;
+    background: white;
+    box-shadow: 14px 14px 29px #a4a4a4, -14px -14px 29px #ffffff;
+    overflow: hidden;
+    transition: transform 0.5s;
+    position: relative;
+    cursor: pointer;
+}
+.cards:hover
+{
+    transform: scale(1.1);
+}
+.card-image {
+    aspect-ratio: 3/2;
+    transition: transform 0.3s;
+    object-fit:cover;
+}
+
+.cards-heading {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(45, 55, 72);
+    font-size: 1.5rem;
+}
+
+.cards-para {
+    text-align: left;
+    font-weight: bolder;
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgba(45, 55, 72, 0.658);
+    font-size: 0.8rem;
+    margin: 20px 20px;
+}
+
+@media (max-width:800px) 
+{
+    .blog-heading{
+        font-size: 4vmax;
+    }    
+}

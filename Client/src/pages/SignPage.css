@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.sign-navbar
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #9fc6ff, #b7cefe, #cbd7fd, #dce0fb, #eaeafa, #eaeafa, #eaeafa, #eaeafa, #dce0fb, #cbd7fd, #b7cefe, #9fc6ff);
+}
+.sign-wrapper
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.sign-container
+{
+    width: 80vmax;
+    margin-bottom: 100px;
+    display: flex;
+    backdrop-filter: blur(25px);
+    border: 2px solid #c6c3c3;
+    box-shadow: 3px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    height:70%;
+}
+
+.sign-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:55vmax;
+}
+
+.sign-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.sign-right 
+{
+    position: relative;
+    width: 45vmax;
+}
+.sign-main-container
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 110px;
+    align-items: center;
+    width: 100%;
+}
+
+.sign-formc
+{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding: 20px;
+    align-items: center;
+}
+#sign-welcome
+{
+    font-size: 1vmax;
+    font-family: "Nunito Sans", sans-serif;
+    background: #2b70d7;
+    color: white;
+    position: absolute;
+    padding: 10px 20px;
+    top: 7px;
+    left: 0;
+    border-radius: 0 40px 40px 0;
+    font-weight: bold;
+}
+#sign-form-heading
+{
+    font-size: 2vmax;
+    font-family: "Nunito Sans", sans-serif;
+    color: #2b70d7;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 20px;  
+}
+.sign-formc>input
+{
+    border: none;
+    background-color: #E6E7FA;
+    border-bottom: 2px solid #47689a;
+    font-size: 1.3rem;
+    color: #2b70d7;
+
+}
+.sign-formc>input::placeholder
+{
+    color: #9fc6ff;
+    letter-spacing: 1px;
+}
+.sign-formc>input:focus
+{
+    outline: none;
+}
+.sign-formc>button
+{
+    background-color: #2b70d7;
+    border-radius: 30px;
+    padding: 12px;
+    width: fit-content;
+    cursor: pointer;
+    border: #1a54a3;
+    box-shadow: 0 0 4px 5px #2b70d7;
+}
+.sign-formc>button:hover {
+    box-shadow: 0 0 4px 5px #1a54a3;
+    background-color: #1a54a3;
+}
+.sign-anchor
+{
+    position: absolute; 
+    bottom: 10px;
+    left: 70px; 
+}
+.sign-anchor-para
+{
+    color: #6180ae;
+}
+.sign-anchor-para>a
+{
+    color:#2b70d7 ;
+}
+
+@media (max-width:700px)
+{
+    .sign-container
+    {
+        position: relative;
+    }
+    .sign-left,
+    #sign-welcome
+    {
+        display: none;
+    }
+    .sign-right{
+        left: 15%;
+    }
+}
+@media (max-width:600px) 
+{
+    .sign-right{
+        left: 8%;
+    }
+}

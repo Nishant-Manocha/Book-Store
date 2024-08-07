@@ -1,0 +1,96 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+.book-container {
+    width: 100%;
+    background-image: linear-gradient(to right top, #4d6fb1, #5879bb, #6384c5, #6d8ecf, #7899d9, #81a0dc, #8ba8e0, #94afe3, #9eb4e0, #a8badc, #b1bfd9, #bbc4d5);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    padding-bottom: 130px;
+}
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.book-main-content {
+    padding: 40px 0;
+}
+
+.bookstore-heading {
+    font-weight: bolder;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 3vmax;
+    margin-top: 40px;
+}
+
+.books-card-container
+{
+    display: grid;
+    gap: 80px;
+    padding: 40px;
+    width: 100%;
+    background-color:white;
+    grid-template-columns: 45% 45%;
+
+}
+.out-button
+{
+    background-color: var(--apple-blossom);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+}
+.book-center
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right:30px;
+
+} 
+
+.book-center-heading-container
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.book-center-heading
+{
+    font-weight: bolder;
+    font-family: 'Nunito Sans', sans-serif;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 2.8rem;
+
+}
+.book-horizontal-line {
+    width: 6px;
+    height: 28px;
+    background-color: var(--apple-blossom);
+    border-radius: 25%;
+}
+
+@media (max-width:850px)
+{
+    .bookstore-heading
+    {
+        font-size: 2.2vmax;
+    }
+}
+@media (max-width:1150px)
+{
+    .books-card-container
+    {
+        grid-template-columns:1fr;
+    }
+}

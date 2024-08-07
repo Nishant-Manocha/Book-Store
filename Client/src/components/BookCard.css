@@ -1,0 +1,102 @@
+.book-cards {
+    border-radius: 13px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 10px 10px 20px #dedede, -10px -10px 20px #ffffff;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 10px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.book-cards:hover {
+    transform: scale(1.05);
+    box-shadow: 15px 15px 30px #d4d4d4, -15px -15px 30px #ffffff;
+}
+
+.left-image {
+    width: 150px; 
+    height: 200px;
+    border-radius: 13px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.book-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.books-cards-heading {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(45, 55, 72);
+    font-size: 1.5rem;
+}
+
+.books-cards-para {
+    font-weight: normal; 
+    font-family: 'Nunito Sans', sans-serif;
+    color: #333;
+    font-size: 1rem;
+    margin: 20px 0 20px 20px;
+    text-align: left;
+}
+
+.like-icon {
+    font-size: 2rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.books-button
+{
+    display: flex;
+    justify-content: space-between;
+}
+.books-download-button
+{
+    background-color: var(--apple-blossom);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+
+}
+
+@media (max-width:900px) 
+{
+    
+}
+
+@media (max-width:1100px) 
+{
+    .book-cards
+    {
+        grid-template-columns: 30% 1fr;
+        gap:10px;
+    }
+    .left-image{
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+    }
+}

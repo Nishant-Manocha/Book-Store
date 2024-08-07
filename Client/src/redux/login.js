@@ -1,0 +1,19 @@
+// src/redux/login.js
+import { createSlice } from '@reduxjs/toolkit';
+
+const initialState = {
+  login: false,
+};
+
+const loginSlice = createSlice({
+  name: 'loginuser',
+  initialState,
+  reducers: {
+    setLogin: (state, action) => {
+      state.login = action.payload;
+    },
+  },
+});
+
+export const { setLogin } = loginSlice.actions;
+export default loginSlice.reducer;

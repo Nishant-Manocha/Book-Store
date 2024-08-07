@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,609;1,609&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root {
+    --stark-white: #E9D9C6;
+    --san-marino: #4D6FB1;
+    --apple-blossom: #A5403B;
+    --au-chico: #95555C;
+    --background: #4D6FB1; /* San Marino for the background */
+    --text-color: #E9D9C6; /* Stark White for text */
+    --hover-color: #95555C; /* Au Chico for hover effects */
+}

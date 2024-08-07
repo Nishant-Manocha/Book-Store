@@ -1,0 +1,148 @@
+/* Footer */
+.footer {
+    background-color: rgb(208, 206, 206);
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-items {
+    display: flex;
+    margin: 30px;
+}
+
+.footer-icons {
+    color: var(--apple-blossom);
+    font-size: 27px;
+    margin-right: 10px;
+}
+
+.footer-icons-details p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.footer-line {
+    width: 100%;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.315);
+}
+
+.footer-bottom {
+    width: 100%;
+    margin: 50px;
+    display: flex;
+    height: fit-content;
+    gap: 30px;
+}
+
+.footer-logo {
+    display: flex;
+}
+
+.footer-bottom-left {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 20px;
+}
+
+.footer-logo h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-left: -15px;
+    color: #2a4a85;
+}
+
+.footer-bottom-left p {
+    color: rgb(73, 73, 73);
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-bottom-line {
+    width: 3px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.315);
+}
+
+.footer-bottom-right {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer-bottom-right h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    color: rgb(97, 95, 95);
+}
+
+.footer-underline {
+    width: 60px;
+    height: 4px;
+    background-color: var(--apple-blossom);
+    margin-top: -15px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-menu-items {
+    text-decoration: none;
+    color: var(--apple-blossom);
+    font-size: 1.2rem;
+}
+
+.copyright-para {
+    text-align: center;
+    color: rgb(37, 37, 37);
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+@media (max-width:800px) 
+{
+    .footer-bottom{
+        flex-direction: column;
+        margin: 0;
+    }
+    .footer-bottom-left
+    {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .footer-bottom-right,.footer-menu
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-bottom-right  h2{
+        margin: 0;
+        padding-bottom: 20px;
+
+    }
+    .footer-bottom-right{
+        position: relative;
+    }
+    .footer-underline{
+        position: absolute;
+        bottom: 10px;
+    }
+
+    
+}

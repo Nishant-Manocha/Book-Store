@@ -1,0 +1,72 @@
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.image{
+    mix-blend-mode: darken;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-items {
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.3rem;
+    color:white;
+    transition: color 0.5s;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.menu-items:hover {
+    background-color: #a5403b72;
+    color: white;
+}
+
+.menu-items::before {
+    content: "";
+    width: 0%;
+    background-color: var(--apple-blossom);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+    height:5px;
+}
+
+.menu-items:hover::before {
+    width: 100%;
+}
+
+.Style-button {
+    background-color: var(--apple-blossom);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+}
+@media (max-width:1200px)
+{
+    .menu{
+        display: none;
+    }
+}
