@@ -5,13 +5,13 @@
 .cards-container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(20vmax,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(18vmax,1fr));
     grid-template-rows: auto;
     gap: 70px 40px;
     transition: transform 0.5s;
     padding: 20px;
     height: auto;  
-    padding-bottom: 50px;
+    padding: 50px;
 }
 
 .blog-heading-container {
@@ -76,6 +76,6 @@
 @media (max-width:800px) 
 {
     .blog-heading{
-        font-size: 4vmax;
+        font-size: 3vmax;
     }    
 }

@@ -2,7 +2,6 @@ import React from 'react'
 import './AboutUs.css'
 const AboutUs = () => {
   return (
-  <div className='About-us-margin-wrapper'>
     <div className='About-us-wrapper'>
         <div className='About-us-container'>
           <div className='About-us-left'>
@@ -11,15 +10,12 @@ const AboutUs = () => {
             <button className='About-us-button'>Learn More</button>
           </div>
         <div className='About-us-right'>
-          <div className='About-us-square-one'></div>
-          <img src="../images/COA.jpeg" alt="" className='About-us-image'/>
+          <img src="../images/AboutUs.jpg" alt="" className='About-us-image'/>
         </div>
-        <div className='About-us-square-two'></div>
 
         </div>
 
     </div>
-  </div>
   )
 }
 

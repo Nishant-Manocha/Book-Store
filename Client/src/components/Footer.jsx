@@ -27,7 +27,7 @@ function Footer()
                             <p>9877668028</p>
                         </div>
                     </div>
-                    <div className='footer-items'>
+                    <div className='footer-items last-item'>
                         <div className='footer-icons'>
                             <IoIosMail></IoIosMail>
                         </div>
